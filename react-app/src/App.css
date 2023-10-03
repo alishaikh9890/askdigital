@@ -1,38 +1,173 @@
 .App {
   text-align: center;
+  width:460px;
+  /* border:1px solid red; */
+  border: 1px solid gray;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App > div{
+  margin-bottom: 4vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* <----------------- NAVBAR ------------------------------->  */
+
+.navbar{
+  background-color: #0d0a0b;
+  background-image: linear-gradient(315deg, #0d0a0b 0%, #009fc2 74%);
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 2vh;
+}
+
+.navbar > a {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-decoration: none;
+  color:rgb(57,176,254);
+}
+
+.navbar p{
+  font-weight: 600;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar img{
+  width: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* <----------------- LOGO ------------------------------->  */
+
+.logo{
+  /* border: 1px solid red; */
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
+
+.logo img{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+/* <----------------- PRODUCTS ------------------------------->  */
+
+.products{
+  /* border: 1px solid red; */
+}
+
+.prod{
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 10px;
+  overflow:auto;
+  overflow: hidden;
+
+}
+
+
+
+.item img{
+  width: 180px;
+  border: 1px solid gray;
+} 
+
+.item{ 
+  padding: 1vh;
+  border: 1px solid gray;
+  width: 180px;
+  position: relative;
+   animation: mymove 5s linear infinite;
+   
+}
+@keyframes mymove{
+  from {left: 0px;}
+  to {left: -1000px;}
+}
+
+.item{
+  position: relative;
+  animation: myselfmove 10s linear infinite;
+}
+
+@keyframes myselfmove{
+  from {left: -1000px;}
+  to {left: 0px;}
+}
+
+
+/* <----------------- SOCIAL ------------------------------->  */
+
+.social{
+  /* border:1px solid red; */
+}
+
+.icons a{
+  text-decoration: none;
+}
+
+.icons{
+  display: flex;
+  gap:20px;
+  justify-content: center;
+  /* border:1px solid red; */
+  width: fit-content;
+  margin: auto;
+  padding: 1vh 2vh;
+  color:rgb(57,176,254);
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+}
+
+.icons  img{
+  width: 50px;
+  height: 50px;
+}
+
+
+/* <----------------- SOCIAL ------------------------------->  *//* <----------------- FOOTER ------------------------------->  */
+
+.footer{
+
+  /* border: 1px solid red; */
+  background-color: #0d0a0b;
+background-image: linear-gradient(315deg, #0d0a0b 0%, #009fc2 74%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:2vh;
+  text-align: start;
+}
+
+.footer a img{
+  width: 50px;
+  height: 50px;
+
+  
+}
+
+.footer a{
+  display: flex;
+  gap:10px;
+  text-decoration: none;
+  color:white;
+}
+
+.QR img{
+  border:1px solid gray;
+  width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
