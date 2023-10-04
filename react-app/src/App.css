@@ -1,29 +1,48 @@
 .App {
+
+
+  background-image: url('assets/gear-background3.jpg');
+  /* Replace 'your-image.jpg' with the path to your image */
+background-size: cover;
+/* Adjust how the image covers the element */
+background-repeat: no-repeat;
+/* Prevent the image from repeating */
+
+
   text-align: center;
   width:460px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
   /* border:1px solid red; */
   border: 1px solid gray;
   margin: auto;
 }
 
-.App > div{
+/* .App > div{
   margin-bottom: 4vh;
-}
-
+} */
 
 /* <----------------- NAVBAR ------------------------------->  */
 
 .navbar{
-  background-color: #0d0a0b;
-  background-image: linear-gradient(315deg, #0d0a0b 0%, #009fc2 74%);
+  background-image: url(assets/nav-back1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+  /* background-color: #0d0a0b; */
+  /* background-image: linear-gradient(315deg, #0d0a0b 0%, #009fc2 74%); */
   display: flex;
   justify-content: space-between;
-  padding: 0 2vh;
+  padding: 1vh 1vh;
 }
 
 .navbar > a {
   display: flex;
-  gap: 10px;
+  gap: 0px;
+  padding: 0;
+
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
@@ -32,28 +51,62 @@
 
 .navbar p{
   font-weight: 600;
-  color: white;
+  color: white; 
+   font-size: 18px;
+   margin: 0;
 }
 
 .navbar img{
   width: 40px;
+  padding: 0;
 }
 
 
-/* <----------------- LOGO ------------------------------->  */
 
-.logo{
-  /* border: 1px solid red; */
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+/* <----------------- SOCIAL ------------------------------->  */
+
+.social{
+  /* border:1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
 }
 
 .logo img{
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: 260px;
+}
+
+.icons1, .icons2 a{
+  text-decoration: none;
+}
+
+.icons1, .icons2{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  justify-content: center;
+  /* border:1px solid red; */
+  width: fit-content;
+  margin: auto;
+  padding: 1vh 2vh;
+  color:rgb(57,176,254);
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+}
+
+.icons1  img{
+  width: 50px;
+  height: 50px;
+}
+
+.icons2 img{
+  width: 50px;
+  height: 50px;
 }
 
 
 /* <----------------- PRODUCTS ------------------------------->  */
+
 
 .products{
   /* border: 1px solid red; */
@@ -75,7 +128,12 @@
   border: 1px solid gray;
 } 
 
+.item p{
+  font-weight: 700;
+}
+
 .item{ 
+  background-color: white;
   padding: 1vh;
   border: 1px solid gray;
   width: 180px;
@@ -83,6 +141,8 @@
    animation: mymove 5s linear infinite;
    
 }
+
+
 @keyframes mymove{
   from {left: 0px;}
   to {left: -1000px;}
@@ -99,66 +159,47 @@
 }
 
 
-/* <----------------- SOCIAL ------------------------------->  */
-
-.social{
-  /* border:1px solid red; */
-}
-
-.icons a{
-  text-decoration: none;
-}
-
-.icons{
-  display: flex;
-  gap:20px;
-  justify-content: center;
-  /* border:1px solid red; */
-  width: fit-content;
-  margin: auto;
-  padding: 1vh 2vh;
-  color:rgb(57,176,254);
-  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
-}
-
-.icons  img{
-  width: 50px;
-  height: 50px;
-}
 
 
-/* <----------------- SOCIAL ------------------------------->  *//* <----------------- FOOTER ------------------------------->  */
+/* <----------------- FOOTER ------------------------------->  *//* <----------------- FOOTER ------------------------------->  */
 
 .footer{
+background-image: url(assets/foot-back1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
 
-  /* border: 1px solid red; */
-  background-color: #0d0a0b;
-background-image: linear-gradient(315deg, #0d0a0b 0%, #009fc2 74%);
+/* border: 1px solid red; */
+  /* background-color: #0d0a0b; */
+/* background-image: linear-gradient(315deg, #0d0a0b 0%, #009fc2 74%); */
   display: flex;
   flex-direction: row;
+  gap:20px;
   justify-content: space-between;
-  align-items: center;
-  padding:2vh;
+  
+  padding:1vh;
   text-align: start;
 }
 
 .footer a img{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 
   
 }
 
 .footer a{
+  margin-top: 10px;
   display: flex;
   gap:10px;
   text-decoration: none;
+  text-shadow: 2px 2px black;
   color:white;
+  font-weight: 600;
 }
 
 .QR img{
   border:1px solid gray;
-  width: 100px;
+  width: 130px;
 }
 
 

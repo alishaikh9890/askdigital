@@ -12,6 +12,7 @@ import QR from "./assets/QR-code.png"
 import Email from "./assets/email.png"
 import Phone from "./assets/phone.png"
 import Whatsapp from "./assets/whatsapp.png"
+import Google from "./assets/google.png"
 
 function App() {
 
@@ -125,20 +126,28 @@ React.useEffect(() => {
       </div>
 
 
-{/*  <----------------- LOGO -------------------------------> */}
 
-      <div className='logo'>
+
+      
+      
+      {/*  <----------------- SOCIAL -------------------------------> */}
+      
+      
+      <div className='social'>
+
+       
+     
+        <div className='icons1'>
+          <a href='https://www.linkedin.com/company/kavitsu-transmissions-pvt-ltd/'><img src={Linkedin} alt='' /></a>
+          <a href='https://www.google.com/search?q=kavitsu&rlz=1C5CHFA_enIN1037IN1037&oq=kavitsu+&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgcIARAAGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgyNTUyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8'><img src={Google} alt='' /></a>
+          <a href='https://www.instagram.com/kavitsu803/'><img src={Instagram} alt='' /></a>
+        </div>
+
+        <div className='logo'>
         <img src='https://www.kavitsu.com/img/kavitsu-logo1.png' alt='' />
       </div>
 
-
-{/*  <----------------- SOCIAL -------------------------------> */}
-
-      <div className='social'>
-        <h1>Social</h1>
-        <div className='icons'>
-          <a href='https://www.linkedin.com/company/kavitsu-transmissions-pvt-ltd/'><img src={Linkedin} alt='' /></a>
-          <a href='https://www.instagram.com/kavitsu803/'><img src={Instagram} alt='' /></a>
+        <div className='icons2'>
           <a href='https://www.youtube.com/@kavitsutransmissions7371'><img src={Youtube} alt='' /></a>
           <a href='https://www.facebook.com/KavitsuTransmissions'><img src={Facebook} alt='' /></a>
           <a href='https://api.whatsapp.com/send?phone=+91%209096469696&text=Hi!%20I%27m%20interested%20in%20your%20service'><img src={Whatsapp} alt='' /></a>
@@ -153,7 +162,7 @@ React.useEffect(() => {
         <div className='prod '>
           {
             data.map((item) => (
-              <div className='item primary' key={item.id}>
+              <div className='item' key={item.id}>
                   <img src={item.image} alt='' />
                   <p>{item.name}</p>
               </div>
