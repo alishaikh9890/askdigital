@@ -13,6 +13,7 @@ import Email from "./assets/email.png"
 import Phone from "./assets/phone.png"
 import Whatsapp from "./assets/whatsapp.png"
 import Google from "./assets/google.png"
+import Gif from "./assets/gear.gif"
 
 function App() {
 
@@ -125,17 +126,12 @@ React.useEffect(() => {
           <a href='tel:+919860799510'><img src={Phone} alt="" /><p>+91 9860799510</p></a>
       </div>
 
-
-
-
-      
       
       {/*  <----------------- SOCIAL -------------------------------> */}
       
       
       <div className='social'>
 
-       
      
         <div className='icons1'>
           <a href='https://www.linkedin.com/company/kavitsu-transmissions-pvt-ltd/'><img src={Linkedin} alt='' /></a>
@@ -152,6 +148,11 @@ React.useEffect(() => {
           <a href='https://www.facebook.com/KavitsuTransmissions'><img src={Facebook} alt='' /></a>
           <a href='https://api.whatsapp.com/send?phone=+91%209096469696&text=Hi!%20I%27m%20interested%20in%20your%20service'><img src={Whatsapp} alt='' /></a>
         </div>
+      </div>
+
+
+      <div className='gif'>
+        <img src={Gif} alt='' />
       </div>
 
 
